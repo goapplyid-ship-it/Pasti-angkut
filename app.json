@@ -3,6 +3,13 @@
     "name": "Pasti Angkut",
     "slug": "pasti-angkut",
     "version": "1.0.0",
-    "android": { "package": "com.goapplyid.pastiangkut" }
+    "android": {
+      "package": "com.goapplyid.pastiangkut"
+    },
+    "extra": {
+      "eas": {
+        "projectId": "2800c8c6-bf5a-472a-b273-ee7421c670b1"
+      }
+    }
   }
 }
