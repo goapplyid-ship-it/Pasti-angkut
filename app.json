@@ -3,6 +3,7 @@
     "name": "Pasti Angkut",
     "slug": "pasti-angkut",
     "version": "1.0.0",
+    "owner": "zikribumdess-team",
     "android": {
       "package": "com.goapplyid.pastiangkut"
     },
