@@ -4,8 +4,15 @@
     "slug": "angkut-sampah",
     "version": "1.0.0",
     "owner": "zikribumdess-team",
+    "splash": {
+      "backgroundColor": "#ffffff",
+      "resizeMode": "contain"
+    },
     "android": {
-      "package": "com.goapplyid.pastiangkut"
+      "package": "com.goapplyid.pastiangkut",
+      "adaptiveIcon": {
+        "backgroundColor": "#ffffff"
+      }
     },
     "extra": {
       "eas": {
