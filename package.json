@@ -1,7 +1,7 @@
 {
   "name": "angkut-sampah",
   "version": "2.0.0",
-  "main": "expo-router/entry",
+  "main": "App.js",
   "engines": {
     "node": ">=20.0.0"
   },
