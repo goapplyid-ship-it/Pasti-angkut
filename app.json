@@ -2,21 +2,49 @@
   "expo": {
     "name": "Pasti Angkut",
     "slug": "angkut-sampah",
-    "version": "1.0.0",
-    "owner": "zikribumdess-team",
+    "version": "2.0.0",
+    "owner": "zikribumdes-team",
     "splash": {
       "backgroundColor": "#ffffff",
       "resizeMode": "contain"
     },
     "android": {
       "package": "com.goapplyid.pastiangkut",
+      "permissions": [
+        "CAMERA",
+        "ACCESS_FINE_LOCATION",
+        "ACCESS_COARSE_LOCATION",
+        "READ_EXTERNAL_STORAGE",
+        "WRITE_EXTERNAL_STORAGE"
+      ],
       "adaptiveIcon": {
         "backgroundColor": "#ffffff"
       }
     },
+    "plugins": [
+      [
+        "expo-camera",
+        {
+          "cameraPermission": "Izinkan Pasti Angkut mengakses kamera untuk scan QR & foto bukti sampah"
+        }
+      ],
+      [
+        "expo-location",
+        {
+          "locationAlwaysAndWhenInUsePermission": "Izinkan Pasti Angkut akses GPS bukti angkut",
+          "locationWhenInUsePermission": "Izinkan akses GPS"
+        }
+      ],
+      [
+        "expo-image-picker",
+        {
+          "photosPermission": "Izinkan akses galeri foto bukti"
+        }
+      ]
+    ],
     "extra": {
       "eas": {
-        "projectId": "e3f04e58-bbf8-4baa-b124-dfc50a050ffb"
+        "projectId": "e3f84e58-bbf8-4baa-b124-dfc50a050fb0"
       }
     }
   }
