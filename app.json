@@ -1,35 +1,46 @@
 {
   "expo": {
-    "name": "Angkut Sampah",
+    "name": "Angkut sampah",
     "slug": "angkut-sampah",
-    "version": "2.0.0",
+    "version": "1.0.0",
     "orientation": "portrait",
-    "platforms": ["android"],
+    "icon": "./assets/icon.png",
+    "splash": {
+      "image": "./assets/splash.png",
+      "resizeMode": "contain",
+      "backgroundColor": "#ffffff"
+    },
+    "updates": {
+      "fallbackToCacheTimeout": 0
+    },
+    "assetBundlePatterns": [
+      "**/*"
+    ],
+    "ios": {
+      "supportsTablet": true
+    },
     "android": {
-      "package": "com.angkut.sampah",
+      "adaptiveIcon": {
+        "foregroundImage": "./assets/adaptive-icon.png",
+        "backgroundColor": "#FFFFFF"
+      },
+      "package": "com.zikribumdes.angkutsampah",
       "permissions": [
-        "android.permission.CAMERA",
+        "android.permission.ACCESS_COARSE_LOCATION",
         "android.permission.ACCESS_FINE_LOCATION",
-        "android.permission.ACCESS_COARSE_LOCATION"
+        "android.permission.FOREGROUND_SERVICE"
       ]
+    },
+    "web": {
+      "favicon": "./assets/favicon.png"
     },
     "plugins": [
       [
         "expo-location",
         {
-          "locationAlwaysAndWhenInUsePermission": "Izinkan Angkut Sampah mengakses lokasi untuk penjemputan sampah"
-        }
-      ],
-      [
-        "expo-image-picker",
-        {
-          "photosPermission": "Izinkan akses foto untuk laporan sampah"
-        }
-      ],
-      [
-        "expo-camera",
-        {
-          "cameraPermission": "Izinkan kamera untuk foto sampah"
+          "locationAlwaysAndWhenInUsePermission": "Allow $(PRODUCT_NAME) to use your location.",
+          "isIosBackgroundLocationEnabled": true,
+          "isAndroidBackgroundLocationEnabled": true
         }
       ]
     ]
